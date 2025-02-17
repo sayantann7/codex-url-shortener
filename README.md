@@ -2,9 +2,6 @@
 
 This is a URL shortener that makes it easy to create, share, and manage short links. Create your own custom short links with this.
 
-## Deployed Link
-https://smallr-links.vercel.app
-
 ## Table of Contents
 
 - [Features](#features)
