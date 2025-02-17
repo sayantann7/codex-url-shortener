@@ -25,7 +25,7 @@ To get started with Smallr, follow these steps:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd smallr
+    cd codex-url-shortener
     ```
 3. Install the dependencies:
     ```bash
