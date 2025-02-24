@@ -25,12 +25,22 @@ function Home() {
     fetch("/api/shorten", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        setGenerated(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`);
+        setGenerated(`http://localhost:3000/${shorturl}`);
         setShortUrl("");
         setUrl("");
         alert(result.message);
       })
       .catch((error) => console.error(error));
+  };
+
+  const copyToClipboard = () => {
+    if (generated) {
+      navigator.clipboard.writeText(generated).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
   };
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-7">
@@ -63,6 +73,12 @@ function Home() {
           Shorten
         </button>
         {generated && <h1>Your Short URL: {generated}</h1>}
+
+        {generated && (
+                  <button onClick={copyToClipboard} className="w-full mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Copy Link
+                  </button>
+              )}
       </div>
     </div>
   );

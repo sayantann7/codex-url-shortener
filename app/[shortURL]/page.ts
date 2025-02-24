@@ -15,6 +15,6 @@ export default async function Page({ params }) {
     redirect(doc.url);
   } else {
     console.log("Short URL not found, redirecting to home page");
-    redirect(`${process.env.NEXT_PUBLIC_HOST}/home`);
+    redirect(`http://localhost:3000/home`);
   }
 }
