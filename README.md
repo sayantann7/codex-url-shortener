@@ -31,12 +31,7 @@ To get started with Smallr, follow these steps:
     ```bash
     npm install
     ```
-4. Create a `.env.local` file in the root directory and add your MongoDB URI:
-    ```env
-    MONGODB_URI=your_mongodb_uri
-    NEXT_PUBLIC_HOST=http://localhost:3000
-    ```
-5. Run the development server:
+4. Run the development server:
     ```bash
     npm run dev
     ```
