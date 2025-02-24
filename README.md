@@ -17,7 +17,7 @@ This is a URL shortener that makes it easy to create, share, and manage short li
 
 ## Installation
 
-To get started with Smallr, follow these steps:
+To get started with this URL Shortener, follow these steps:
 
 1. Clone the repository:
     ```bash
